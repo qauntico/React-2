@@ -1,0 +1,15 @@
+.display {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(160, 155, 155);
+    margin-top: 10px;
+}
+.name {
+    font-weight: bold;
+}
+.amount {
+    font-weight: bold;
+    font-size: 19px;
+    color: #ad5502;
+}

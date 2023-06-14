@@ -1,0 +1,23 @@
+.container {
+    font-weight: bold;
+    height: 100%;
+
+}
+.container input {
+    width: 40px;
+    border-radius: 7px;
+    border: 1px solid rgb(139, 137, 137);
+}
+.container label {
+    margin-right: 12px;
+}
+.container button {
+    position: relative;
+    left: 7px;
+    top: 5px;
+    border: none;
+    padding: 6px 30px;
+    border-radius: 10px;
+    background: #8a2b06;
+    font-weight: bold;
+}

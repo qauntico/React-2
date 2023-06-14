@@ -1,0 +1,46 @@
+.list {
+    list-style: none;
+    padding: 10px 5px;
+    border-bottom: 1px solid #4d1601;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.container2 {
+    display: flex;
+    gap: 30px;
+}
+.price {
+    position: relative;
+    top: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ad5502;
+}
+.number {
+    position: relative;
+    top: 56px;
+    border: 1px solid #4d1601;
+    border-radius: 10px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+}
+.btn {
+    position: relative;
+    top: 10px;
+}
+.btn button{
+    display: block;
+    border: 1px solid #4d1601;
+    background: transparent;
+    border-radius: 30px;
+}
+.btn1 {
+    padding: 3px 18px;
+    margin-bottom: 5px;
+}
+.btn2 {
+    padding: 3px 15px;
+}
