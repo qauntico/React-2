@@ -1,11 +1,20 @@
-import React,{useContext} from "react";
+import React,{useContext, useEffect, useState} from "react";
 import classes from './card-Button.module.css';
 import CartContex from "../Contex/Cart-Contex";
 function CartButton(props){
     const data = useContext(CartContex)
+    const [show, setShow] = useState(false)
     const result = data.items.length
+    useEffect(() => {
+        setShow(true)
+        let timer = setTimeout(() => {
+            setShow(initial => !initial)
+    }, 500);
+    return () => clearTimeout(timer)
+    }, [data.items]);
+
     return <>
-            <button className={classes["cart-button"]} onClick={props.modalVisible}>
+            <button className={`${classes["cart-button"]}  ${show && classes.col}`} onClick={props.modalVisible}>
                 <span className={classes.icon}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-cart-check" viewBox="0 0 16 16">
                         <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>

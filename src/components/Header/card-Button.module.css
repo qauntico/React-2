@@ -23,3 +23,19 @@
     position: relative;
     bottom: 2px;
 }
+.col {
+    animation: bump 0.3s linear;
+}
+@keyframes bump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+  
+ 
